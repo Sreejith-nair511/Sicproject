@@ -2,41 +2,41 @@
 
 This is an enhanced medical diagnosis prediction system that uses machine learning to predict heart disease, hypertension, and diabetes risk based on patient data. The system combines powerful data analysis with an intuitive user interface to help medical professionals quickly assess patient risk profiles.
 
-## 🌟 Key Features
+##  Key Features
 
-### 🔍 Risk Profile Clustering
+###  Risk Profile Clustering
 - Groups patients into different risk profiles using unsupervised learning (K-Means clustering)
 - Helps identify patterns and similarities between patients
 - Visualizes where a patient fits within the broader population
 
-### 🏥 Multi-Disease Prediction
+###  Multi-Disease Prediction
 - Simultaneously predicts three major health conditions:
   - Heart Disease
   - Hypertension (High Blood Pressure)
   - Diabetes Risk
 - Uses advanced Random Forest algorithms for accurate predictions
 
-### 📊 Interactive Dashboard
+### Interactive Dashboard
 - Provides comprehensive visualizations of patient data and predictions
 - Shows 6 different charts for complete insight into patient health
 - Easy-to-understand graphs and metrics for medical professionals
 
-### 📝 Patient History Tracking
+###  Patient History Tracking
 - Automatically saves all prediction results for future reference
 - Maintains a detailed history in `patient_history.json`
 - Helps track patient progress over time
 
-### 🖥️ Dual Interface Options
+###  Dual Interface Options
 - **Command Line Interface**: For technical users who prefer keyboard input
 - **Graphical User Interface**: Easy-to-use form-based interface for all users
 - Choose your preferred method when starting the application
 
-### 🛠️ Self-Contained System
+###  Self-Contained System
 - Automatically generates sample data if no dataset is provided
 - Works out-of-the-box with minimal setup
 - No external dependencies required to get started
 
-## 🚀 Enhanced Features
+##  Enhanced Features
 
 - **Patient History Tracking**: All predictions are automatically saved to `patient_history.json`
 - **Enhanced Visualization Dashboard**: Comprehensive charts and graphs for better insights
@@ -45,7 +45,7 @@ This is an enhanced medical diagnosis prediction system that uses machine learni
 - **Improved Error Handling**: Better error messages and recovery mechanisms
 - **Deployment Script**: Simplified installation and execution process
 
-## 📋 Requirements
+##  Requirements
 
 - Python 3.6 or higher
 - Required Python packages (automatically installed by deploy.py):
@@ -55,7 +55,7 @@ This is an enhanced medical diagnosis prediction system that uses machine learni
   - seaborn (statistical data visualization)
   - scikit-learn (machine learning)
 
-## 🛠️ Installation & Deployment
+##  Installation & Deployment
 
 ### Quick Setup
 1. Run the deployment script:
@@ -75,7 +75,7 @@ If you prefer to install manually:
 pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
-## ▶️ Running the Application
+##  Running the Application
 
 After deployment, you can run the application in multiple ways:
 
@@ -88,7 +88,7 @@ After deployment, you can run the application in multiple ways:
 python HYbrid.py
 ```
 
-## 🎯 How to Use
+##  How to Use
 
 When you start the application, you'll be prompted to choose between two interfaces:
 
@@ -108,7 +108,7 @@ When you start the application, you'll be prompted to choose between two interfa
 2. Click "Predict Risk" to analyze the data
 3. View results in a popup window
 
-## 📈 Output & Results
+##  Output & Results
 
 The system provides comprehensive analysis including:
 
@@ -134,7 +134,7 @@ The system generates 6 detailed visualizations:
 - All predictions are automatically saved to `patient_history.json`
 - Each entry includes timestamp, patient data, and prediction results
 
-## 📁 Project Files
+##  Project Files
 
 - `HYbrid.py`: Main application with both CLI and GUI interfaces
 - `deploy.py`: Automated deployment and setup script
@@ -144,7 +144,7 @@ The system generates 6 detailed visualizations:
 - `patient_history.json`: Saved prediction results and patient history
 - `setup.bat`: Windows setup script
 
-## 🤝 Contributing
+##  Contributing
 
 This is an open-source project designed to help medical professionals and researchers. Contributions are welcome!
 
@@ -154,7 +154,7 @@ You can contribute by:
 - Submitting pull requests with improvements
 - Sharing the project with others in the medical community
 
-## 📞 Support
+##  Support
 
 If you encounter any issues or have questions about the system:
 1. Check that all requirements are installed
