@@ -2,43 +2,45 @@
 
 This is an enhanced medical diagnosis prediction system that uses machine learning to predict heart disease, hypertension, and diabetes risk based on patient data. The system combines powerful data analysis with an intuitive user interface to help medical professionals quickly assess patient risk profiles.
 
-## 🌟 Key Features
+https://sicmain.streamlit.app/
 
-### 🔍 Risk Profile Clustering
+##  Key Features
+
+###  Risk Profile Clustering
 - Groups patients into different risk profiles using unsupervised learning (K-Means clustering)
 - Helps identify patterns and similarities between patients
 - Visualizes where a patient fits within the broader population
 
-### 🏥 Multi-Disease Prediction
+###  Multi-Disease Prediction
 - Simultaneously predicts three major health conditions:
   - Heart Disease
   - Hypertension (High Blood Pressure)
   - Diabetes Risk
 - Uses advanced Random Forest algorithms for accurate predictions
 
-### 📊 Interactive Dashboard
+###  Interactive Dashboard
 - Provides comprehensive visualizations of patient data and predictions
 - Shows 6 different charts for complete insight into patient health
 - Easy-to-understand graphs and metrics for medical professionals
 
-### 📝 Patient History Tracking
+###  Patient History Tracking
 - Automatically saves all prediction results for future reference
 - Maintains a detailed history in `patient_history.json`
 - Helps track patient progress over time
 
-### 🖥️ Multiple Interface Options
+###  Multiple Interface Options
 - **Command Line Interface**: For technical users who prefer keyboard input
 - **Graphical User Interface**: Easy-to-use form-based interface for all users
 - **Web Application (Flask)**: Browser-based interface for remote access
 - **Streamlit Application**: Modern web interface with interactive dashboards
 - Choose your preferred method when starting the application
 
-### 🛠️ Self-Contained System
+###  Self-Contained System
 - Automatically generates sample data if no dataset is provided
 - Works out-of-the-box with minimal setup
 - No external dependencies required to get started
 
-## 🚀 Enhanced Features
+##  Enhanced Features
 
 - **Patient History Tracking**: All predictions are automatically saved to `patient_history.json`
 - **Enhanced Visualization Dashboard**: Comprehensive charts and graphs for better insights
@@ -47,7 +49,7 @@ This is an enhanced medical diagnosis prediction system that uses machine learni
 - **Improved Error Handling**: Better error messages and recovery mechanisms
 - **Deployment Scripts**: Simplified installation and execution process
 
-## 📋 Requirements
+##  Requirements
 
 - Python 3.6 or higher
 - Required Python packages (automatically installed by deploy scripts):
@@ -61,7 +63,7 @@ This is an enhanced medical diagnosis prediction system that uses machine learni
   - streamlit (modern web apps)
   - plotly (interactive charts)
 
-## 🛠️ Installation & Deployment
+##  Installation & Deployment
 
 ### Quick Setup Options
 
@@ -95,7 +97,7 @@ If you prefer to install manually:
 pip install pandas numpy matplotlib seaborn scikit-learn flask flask-wtf streamlit plotly
 ```
 
-## ▶️ Running the Application
+##  Running the Application
 
 ### Desktop Application
 
@@ -140,7 +142,7 @@ streamlit run streamlit_app.py
 
 Once started, access the Streamlit application at: http://localhost:8501
 
-## 🌐 Deploying as a Website
+##  Deploying as a Website
 
 To deploy your medical diagnosis system as a public website:
 
@@ -180,7 +182,7 @@ For production deployment, set these environment variables:
 
 For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md)
 
-## 🎯 How to Use
+##  How to Use
 
 ### Desktop Application
 When you start the desktop application, you'll be prompted to choose between two interfaces:
@@ -217,7 +219,7 @@ When you start the desktop application, you'll be prompted to choose between two
 4. Click "Predict Risk" to analyze the data
 5. View interactive results and visualizations
 
-## 📈 Output & Results
+##  Output & Results
 
 The system provides comprehensive analysis including:
 
@@ -243,7 +245,7 @@ The system generates 6 detailed visualizations:
 - All predictions are automatically saved to `patient_history.json`
 - Each entry includes timestamp, patient data, and prediction results
 
-## 📁 Project Files
+##  Project Files
 
 - `HYbrid.py`: Main desktop application with both CLI and GUI interfaces
 - `app.py`: Flask web application
@@ -263,7 +265,7 @@ The system generates 6 detailed visualizations:
 - `runtime.txt`: Python runtime specification
 - `DEPLOYMENT.md`: Detailed deployment guide
 
-## 🤝 Contributing
+##  Contributing
 
 This is an open-source project designed to help medical professionals and researchers. Contributions are welcome!
 
@@ -273,7 +275,7 @@ You can contribute by:
 - Submitting pull requests with improvements
 - Sharing the project with others in the medical community
 
-## 📞 Support
+##  Support
 
 If you encounter any issues or have questions about the system:
 1. Check that all requirements are installed
@@ -281,7 +283,7 @@ If you encounter any issues or have questions about the system:
 3. Run the appropriate deploy script to reinstall dependencies
 4. Contact the development team through GitHub issues
 
-## 📄 License
+##  License
 
 This project is open-source and available for use in medical research and practice. 
 Please cite appropriately if used in academic or clinical settings.
