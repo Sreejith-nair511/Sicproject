@@ -26,9 +26,10 @@ This is an enhanced medical diagnosis prediction system that uses machine learni
 - Maintains a detailed history in `patient_history.json`
 - Helps track patient progress over time
 
-### 🖥️ Dual Interface Options
+### 🖥️ Multiple Interface Options
 - **Command Line Interface**: For technical users who prefer keyboard input
 - **Graphical User Interface**: Easy-to-use form-based interface for all users
+- **Web Application**: Browser-based interface for remote access and deployment
 - Choose your preferred method when starting the application
 
 ### 🛠️ Self-Contained System
@@ -40,27 +41,37 @@ This is an enhanced medical diagnosis prediction system that uses machine learni
 
 - **Patient History Tracking**: All predictions are automatically saved to `patient_history.json`
 - **Enhanced Visualization Dashboard**: Comprehensive charts and graphs for better insights
-- **Graphical User Interface**: Easy-to-use GUI for non-technical users
+- **Multiple Interface Options**: CLI, GUI, and Web interfaces available
 - **Automatic Data Generation**: Creates sample dataset if none exists
 - **Improved Error Handling**: Better error messages and recovery mechanisms
-- **Deployment Script**: Simplified installation and execution process
+- **Deployment Scripts**: Simplified installation and execution process
 
 ## 📋 Requirements
 
 - Python 3.6 or higher
-- Required Python packages (automatically installed by deploy.py):
+- Required Python packages (automatically installed by deploy scripts):
   - pandas (data manipulation)
   - numpy (numerical computing)
   - matplotlib (plotting and visualization)
   - seaborn (statistical data visualization)
   - scikit-learn (machine learning)
+  - flask (web framework)
+  - flask-wtf (web forms)
 
 ## 🛠️ Installation & Deployment
 
-### Quick Setup
+### Quick Setup Options
+
+#### Desktop Application
 1. Run the deployment script:
    ```
    python deploy.py
+   ```
+
+#### Web Application
+1. Run the web deployment script:
+   ```
+   python web_deploy.py
    ```
 
 2. The deployment process will automatically:
@@ -72,27 +83,85 @@ This is an enhanced medical diagnosis prediction system that uses machine learni
 ### Manual Installation
 If you prefer to install manually:
 ```
-pip install pandas numpy matplotlib seaborn scikit-learn
+pip install pandas numpy matplotlib seaborn scikit-learn flask flask-wtf
 ```
 
 ## ▶️ Running the Application
 
-After deployment, you can run the application in multiple ways:
+### Desktop Application
 
-### Method 1: Using Startup Scripts (Easiest)
+After deployment, you can run the desktop application in multiple ways:
+
+#### Method 1: Using Startup Scripts (Easiest)
 - **Windows**: Double-click `start_app.bat`
 - **Linux/Mac**: Run `./start_app.sh`
 
-### Method 2: Direct Execution
+#### Method 2: Direct Execution
 ```
 python HYbrid.py
 ```
 
+### Web Application
+
+To run the web application:
+
+#### Method 1: Using Web Startup Scripts (Easiest)
+- **Windows**: Double-click `start_web_app.bat`
+- **Linux/Mac**: Run `./start_web_app.sh`
+
+#### Method 2: Direct Execution
+```
+python app.py
+```
+
+Once started, access the web application at: http://localhost:5000
+
+## 🌐 Deploying as a Website
+
+To deploy your medical diagnosis system as a public website:
+
+### Prerequisites
+1. Ensure you have all the required files:
+   - `app.py` (main web application)
+   - `Procfile` (for Heroku deployment)
+   - `runtime.txt` (Python version specification)
+   - `requirements.txt` (dependencies)
+   - `templates/` directory with HTML files
+
+### Deployment Options
+
+#### Heroku (Recommended for beginners)
+1. Install the Heroku CLI from https://devcenter.heroku.com/articles/heroku-cli
+2. Create a Heroku account
+3. Login to Heroku: `heroku login`
+4. Create a new app: `heroku create your-app-name`
+5. Deploy: `git push heroku main`
+6. Open your app: `heroku open`
+
+#### PythonAnywhere
+1. Sign up at https://www.pythonanywhere.com/
+2. Upload your files
+3. Create a new web app and configure it to run your Flask application
+
+#### Other Platforms
+- AWS Elastic Beanstalk
+- Google Cloud Platform
+- Microsoft Azure
+- DigitalOcean
+
+### Environment Variables
+For production deployment, set these environment variables:
+- `SECRET_KEY`: A random secret key for Flask security
+- `PORT`: Port number (defaults to 5000)
+
+For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md)
+
 ## 🎯 How to Use
 
-When you start the application, you'll be prompted to choose between two interfaces:
+### Desktop Application
+When you start the desktop application, you'll be prompted to choose between two interfaces:
 
-### Command Line Interface (Option 1)
+#### Command Line Interface (Option 1)
 1. Enter patient information when prompted:
    - Age
    - Sex (M/F)
@@ -103,10 +172,16 @@ When you start the application, you'll be prompted to choose between two interfa
 
 2. Receive immediate analysis and risk predictions
 
-### Graphical User Interface (Option 2)
+#### Graphical User Interface (Option 2)
 1. Fill in the patient information in the easy-to-use form
 2. Click "Predict Risk" to analyze the data
 3. View results in a popup window
+
+### Web Application
+1. Open your web browser and go to http://localhost:5000
+2. Fill in the patient information in the web form
+3. Click "Predict Risk" to analyze the data
+4. View comprehensive results and visualizations in your browser
 
 ## 📈 Output & Results
 
@@ -136,13 +211,20 @@ The system generates 6 detailed visualizations:
 
 ## 📁 Project Files
 
-- `HYbrid.py`: Main application with both CLI and GUI interfaces
-- `deploy.py`: Automated deployment and setup script
+- `HYbrid.py`: Main desktop application with both CLI and GUI interfaces
+- `app.py`: Web application using Flask
+- `deploy.py`: Automated deployment script for desktop app
+- `web_deploy.py`: Automated deployment script for web app
 - `requirements.txt`: Python package dependencies
-- `start_app.bat/sh`: Platform-specific startup scripts
+- `start_app.bat/sh`: Platform-specific startup scripts for desktop app
+- `start_web_app.bat/sh`: Platform-specific startup scripts for web app
 - `heart_disease_uci.csv`: Medical dataset (automatically created if missing)
 - `patient_history.json`: Saved prediction results and patient history
 - `setup.bat`: Windows setup script
+- `templates/`: HTML templates for web application
+- `Procfile`: Configuration for Heroku deployment
+- `runtime.txt`: Python runtime specification
+- `DEPLOYMENT.md`: Detailed deployment guide
 
 ## 🤝 Contributing
 
@@ -159,7 +241,7 @@ You can contribute by:
 If you encounter any issues or have questions about the system:
 1. Check that all requirements are installed
 2. Ensure you're using Python 3.6 or higher
-3. Run the deploy.py script to reinstall dependencies
+3. Run the appropriate deploy script to reinstall dependencies
 4. Contact the development team through GitHub issues
 
 ## 📄 License
