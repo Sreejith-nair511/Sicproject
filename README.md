@@ -2,42 +2,46 @@
 
 This is an enhanced medical diagnosis prediction system that uses machine learning to predict heart disease, hypertension, and diabetes risk based on patient data. The system combines powerful data analysis with an intuitive user interface to help medical professionals quickly assess patient risk profiles.
 
-## 🌟 Key Features
+##  Key Features
 
-### 🔍 Risk Profile Clustering
+###  Risk Profile Clustering
 - Groups patients into different risk profiles using unsupervised learning (K-Means clustering)
 - Helps identify patterns and similarities between patients
 - Visualizes where a patient fits within the broader population
 
-### 🏥 Multi-Disease Prediction
+###  Multi-Disease Prediction
 - Simultaneously predicts three major health conditions:
   - Heart Disease
   - Hypertension (High Blood Pressure)
   - Diabetes Risk
 - Uses advanced Random Forest algorithms for accurate predictions
 
-### 📊 Interactive Dashboard
+### Interactive Dashboard
 - Provides comprehensive visualizations of patient data and predictions
 - Shows 6 different charts for complete insight into patient health
 - Easy-to-understand graphs and metrics for medical professionals
 
-### 📝 Patient History Tracking
+###  Patient History Tracking
 - Automatically saves all prediction results for future reference
 - Maintains a detailed history in `patient_history.json`
 - Helps track patient progress over time
 
+<<<<<<< HEAD
 ### 🖥️ Multiple Interface Options
+=======
+###  Dual Interface Options
+>>>>>>> bc61da586ba9a05903e5f633757fcb3988e0cfd1
 - **Command Line Interface**: For technical users who prefer keyboard input
 - **Graphical User Interface**: Easy-to-use form-based interface for all users
 - **Web Application**: Browser-based interface for remote access and deployment
 - Choose your preferred method when starting the application
 
-### 🛠️ Self-Contained System
+###  Self-Contained System
 - Automatically generates sample data if no dataset is provided
 - Works out-of-the-box with minimal setup
 - No external dependencies required to get started
 
-## 🚀 Enhanced Features
+##  Enhanced Features
 
 - **Patient History Tracking**: All predictions are automatically saved to `patient_history.json`
 - **Enhanced Visualization Dashboard**: Comprehensive charts and graphs for better insights
@@ -46,7 +50,7 @@ This is an enhanced medical diagnosis prediction system that uses machine learni
 - **Improved Error Handling**: Better error messages and recovery mechanisms
 - **Deployment Scripts**: Simplified installation and execution process
 
-## 📋 Requirements
+##  Requirements
 
 - Python 3.6 or higher
 - Required Python packages (automatically installed by deploy scripts):
@@ -58,7 +62,7 @@ This is an enhanced medical diagnosis prediction system that uses machine learni
   - flask (web framework)
   - flask-wtf (web forms)
 
-## 🛠️ Installation & Deployment
+##  Installation & Deployment
 
 ### Quick Setup Options
 
@@ -86,7 +90,7 @@ If you prefer to install manually:
 pip install pandas numpy matplotlib seaborn scikit-learn flask flask-wtf
 ```
 
-## ▶️ Running the Application
+##  Running the Application
 
 ### Desktop Application
 
@@ -101,6 +105,7 @@ After deployment, you can run the desktop application in multiple ways:
 python HYbrid.py
 ```
 
+<<<<<<< HEAD
 ### Web Application
 
 To run the web application:
@@ -157,6 +162,9 @@ For production deployment, set these environment variables:
 For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md)
 
 ## 🎯 How to Use
+=======
+##  How to Use
+>>>>>>> bc61da586ba9a05903e5f633757fcb3988e0cfd1
 
 ### Desktop Application
 When you start the desktop application, you'll be prompted to choose between two interfaces:
@@ -177,6 +185,7 @@ When you start the desktop application, you'll be prompted to choose between two
 2. Click "Predict Risk" to analyze the data
 3. View results in a popup window
 
+<<<<<<< HEAD
 ### Web Application
 1. Open your web browser and go to http://localhost:5000
 2. Fill in the patient information in the web form
@@ -184,6 +193,9 @@ When you start the desktop application, you'll be prompted to choose between two
 4. View comprehensive results and visualizations in your browser
 
 ## 📈 Output & Results
+=======
+##  Output & Results
+>>>>>>> bc61da586ba9a05903e5f633757fcb3988e0cfd1
 
 The system provides comprehensive analysis including:
 
@@ -209,7 +221,7 @@ The system generates 6 detailed visualizations:
 - All predictions are automatically saved to `patient_history.json`
 - Each entry includes timestamp, patient data, and prediction results
 
-## 📁 Project Files
+##  Project Files
 
 - `HYbrid.py`: Main desktop application with both CLI and GUI interfaces
 - `app.py`: Web application using Flask
@@ -226,7 +238,7 @@ The system generates 6 detailed visualizations:
 - `runtime.txt`: Python runtime specification
 - `DEPLOYMENT.md`: Detailed deployment guide
 
-## 🤝 Contributing
+##  Contributing
 
 This is an open-source project designed to help medical professionals and researchers. Contributions are welcome!
 
@@ -236,7 +248,7 @@ You can contribute by:
 - Submitting pull requests with improvements
 - Sharing the project with others in the medical community
 
-## 📞 Support
+##  Support
 
 If you encounter any issues or have questions about the system:
 1. Check that all requirements are installed
