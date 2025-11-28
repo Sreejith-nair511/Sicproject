@@ -18,15 +18,27 @@ https://sicmain.streamlit.app/
   - Diabetes Risk
 - Uses advanced Random Forest algorithms for accurate predictions
 
+
+<img width="1855" height="745" alt="PatientEntry" src="https://github.com/user-attachments/assets/4e2114c1-90b3-4a59-bb82-71dc9d00c56a" />
+
+
 ###  Interactive Dashboard
 - Provides comprehensive visualizations of patient data and predictions
 - Shows 6 different charts for complete insight into patient health
 - Easy-to-understand graphs and metrics for medical professionals
 
+
+<img width="1858" height="871" alt="dashboard" src="https://github.com/user-attachments/assets/da1485da-2618-4e96-a62f-c3731db108cd" />
+
+
 ###  Patient History Tracking
 - Automatically saves all prediction results for future reference
 - Maintains a detailed history in `patient_history.json`
 - Helps track patient progress over time
+
+
+<img width="1852" height="771" alt="History" src="https://github.com/user-attachments/assets/290579b0-d9ff-4d5f-8e48-9373b651cecb" />
+
 
 ###  Multiple Interface Options
 - **Command Line Interface**: For technical users who prefer keyboard input
@@ -72,7 +84,7 @@ https://sicmain.streamlit.app/
    ```
    python deploy.py
    ```
-
+   
 #### Web Application (Flask)
 1. Run the web deployment script:
    ```
@@ -106,6 +118,8 @@ After deployment, you can run the desktop application in multiple ways:
 #### Method 1: Using Startup Scripts (Easiest)
 - **Windows**: Double-click `start_app.bat`
 - **Linux/Mac**: Run `./start_app.sh`
+  
+![WhatsApp Image 2025-11-27 at 21 53 44_f85ac281](https://github.com/user-attachments/assets/a5868333-12aa-4837-86d5-02574912c0b2)
 
 #### Method 2: Direct Execution
 ```
@@ -126,6 +140,8 @@ python app.py
 ```
 
 Once started, access the web application at: http://localhost:5000
+
+![WhatsApp Image 2025-11-27 at 22 00 52_cc6e69c4](https://github.com/user-attachments/assets/30f10b0d-e923-4ba9-b5d8-c60f2a3eb8cd)
 
 ### Streamlit Application
 
@@ -174,6 +190,8 @@ To deploy your medical diagnosis system as a public website:
 - Google Cloud Platform
 - Microsoft Azure
 - DigitalOcean
+
+![WhatsApp Image 2025-11-27 at 22 20 50_37dac132](https://github.com/user-attachments/assets/778a2662-70f2-42e0-9fc9-7919881ea865)
 
 ### Environment Variables
 For production deployment, set these environment variables:
